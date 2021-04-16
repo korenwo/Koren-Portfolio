@@ -10,7 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Switch>
-          <Route path="/">
+          <Route path="/startPage">
             <StartPage/>
           </Route>
           <Route path="/contact">
