@@ -9,7 +9,7 @@ function MyProjects() {
         <div>
             <h1 className="project">My Projects</h1>
             <div className="toWeb">
-                <Link to="https://todooooooooooooo.herokuapp.com/">
+                <Link to="/https://todooooooooooooo.herokuapp.com/">
                     <FcTodoList/>
                     <h2>Todo-App</h2>
                 </Link>

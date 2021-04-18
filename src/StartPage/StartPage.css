@@ -35,6 +35,10 @@
     position: relative;
     text-align: center;
     font-size: 70px;
+    background: linear-gradient(
+      rgb(142, 200, 219),
+      rgb(60, 234, 104)
+    );
   }
   
   .me{
