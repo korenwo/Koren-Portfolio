@@ -10,7 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Switch>
-          <Route path="/">
+          <Route path="StartPage">
             <StartPage/>
           </Route>
           <Route path="/contact">
@@ -19,6 +19,9 @@ function App() {
           <Route path="/myProjects">
             <MyProjects />
           </Route>
+          <Route path="/" exact>
+              <StartPage />
+        </Route>
         </Switch>
       </BrowserRouter>
     </div>

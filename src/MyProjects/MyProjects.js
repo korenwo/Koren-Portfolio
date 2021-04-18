@@ -1,7 +1,6 @@
 import React from 'react';
 import './MyProjects.css';
 import { Link } from 'react-router-dom';
-import { icons } from 'react-icons';
 import { RiHome2Fill, RiInstagramFill } from 'react-icons/ri';
 import { FcTodoList } from 'react-icons/fc'
 
@@ -10,7 +9,7 @@ function MyProjects() {
         <div>
             <h1 className="project">My Projects</h1>
             <div className="toWeb">
-                <Link to="/https://optimistic-agnesi-d11461.netlify.app/">
+                <Link to="https://todooooooooooooo.herokuapp.com/">
                     <FcTodoList/>
                     <h2>Todo-App</h2>
                 </Link>
