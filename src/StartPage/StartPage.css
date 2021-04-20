@@ -41,7 +41,7 @@
 
 @media only screen and (min-width : 1224px) {
    
-.name{
+.name {
     position: relative;
     text-align: center;
     font-size: 70px;
@@ -49,22 +49,25 @@
       rgb(142, 200, 219),
       rgb(60, 234, 104)
     );
+    
   }
   
-  .me{
-    position: absolute;
-    margin-left: 20px;
+  img:hover {
+    cursor: grab;
+    transform: scale(1.1);
+    transition: 1s;
+    width:550px;
     border-radius: 50%;
-    width: 300px;
-  }
+}
   
   .about{
-    position: relative;
-    text-align: center;
+    display: block;
+    margin: auto;
+    float: right;
     font-size: 25px;
   }
   
-  .projects{
+  .projects {
     display: block;
     margin: auto;
     background-color: black;
@@ -74,7 +77,7 @@
     font-size: larger;
   }
 
-  .onMe li{
+  .onMe li {
     margin-top: 20px;
     font-size: 18px;
   }
