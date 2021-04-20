@@ -1,12 +1,13 @@
 @media only screen and (max-device-width : 480px) {
   
-  .name{
+  .name {
     text-align: center;
     font-size: large;
     margin-top: 20px;
-    background: linear-gradient(
+    background : linear-gradient(
       rgb(142, 200, 219),
       rgb(60, 234, 104)
+   
     );
   }
 
@@ -41,7 +42,7 @@
 
 @media only screen and (min-width : 1224px) {
    
-.name {
+.name  {
     position: relative;
     text-align: center;
     font-size: 70px;
@@ -51,15 +52,19 @@
     );
     
   }
+
+  img{
+    width: 400px;
+  }
   
   img:hover {
     cursor: grab;
     transform: scale(1.1);
     transition: 1s;
-    width:550px;
+    width:450px;
     border-radius: 50%;
 }
-  
+
   .about{
     display: block;
     margin: auto;
@@ -67,14 +72,9 @@
     font-size: 25px;
   }
   
-  .projects {
-    display: block;
-    margin: auto;
-    background-color: black;
-    color:blanchedalmond;
-    width: 120px;
-    height: 60px;
-    font-size: larger;
+  .here {
+    margin-bottom: 20px;
+    color: red;
   }
 
   .onMe li {
@@ -82,16 +82,6 @@
     font-size: 18px;
   }
  
-  .contact {
-    display: block;
-    margin: auto;
-    background-color: black;
-    color:blanchedalmond;
-    width: 120px;
-    height: 60px;
-    font-size: larger;
-    margin-top: 20px;
-  }
 } 
 
   
