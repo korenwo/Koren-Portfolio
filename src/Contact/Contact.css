@@ -4,6 +4,8 @@
         font-size: 20px;
         text-align: center;
         line-height: 80px;
+        color: #2c2b1d;  font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
+        padding-top: 30px;
     }
 
     .links{
@@ -12,7 +14,7 @@
     }
     
     a {
-        color: inherit;
+        color: #342b88; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
     }
 
 }
@@ -22,7 +24,8 @@
     .callUs{
         font-size: 30px;
         text-align: center;
-        line-height: 80px;
+        color: #2c2b1d; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
+        padding-top: 30px;
     }
 
     .links{
@@ -31,7 +34,7 @@
     }
     
     a {
-        color: inherit;
+        color: #342b88; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
     }
 
 }

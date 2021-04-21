@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { RiHome2Fill, RiInstagramFill } from 'react-icons/ri';
 import { FcTodoList } from 'react-icons/fc'
 
-function MyProjects() {
+function MyProjects (props) {
     return(
         <div>
             <h1 className="project">My Projects</h1>
@@ -21,7 +21,7 @@ function MyProjects() {
                 </Link>
             </div>
             <div className="toWeb">
-                <Link to="/startPage">
+                <Link to="/">
                     <RiHome2Fill />
                     <h2>Home Page</h2>
                 </Link>
