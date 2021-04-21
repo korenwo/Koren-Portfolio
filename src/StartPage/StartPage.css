@@ -1,14 +1,12 @@
 @media only screen and (max-device-width : 480px) {
   
   .name {
-    text-align: center;
-    font-size: large;
-    margin-top: 20px;
     background : linear-gradient(
       rgb(142, 200, 219),
-      rgb(60, 234, 104)
+      rgb(37, 61, 43)
    
     );
+    color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
   }
 
 .me{
@@ -22,10 +20,16 @@
   
 }
 
+ .here {
+    margin-bottom: 20px;
+    color: red;
+  }
+
   .about{
     position: relative;
     text-align: center;
     font-size: 15px;
+    color: #7c795d; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 28px; margin: 0; 
   }
 
   .projects{
@@ -38,19 +42,41 @@
     margin: auto;
   }
 
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
 }
 
 @media only screen and (min-width : 1224px) {
    
 .name  {
-    position: relative;
-    text-align: center;
-    font-size: 70px;
     background: linear-gradient(
       rgb(142, 200, 219),
-      rgb(60, 234, 104)
+      rgb(37, 61, 43)
     );
-    
+    color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
   }
 
   img{
@@ -67,9 +93,10 @@
 
   .about{
     display: block;
-    margin: auto;
+    margin:auto;
     float: right;
     font-size: 25px;
+    color: #7c795d; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
   }
   
   .here {
@@ -81,7 +108,31 @@
     margin-top: 20px;
     font-size: 18px;
   }
- 
-} 
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    
+    .button:hover {background-color: #3e8e41}
+    
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+  }
+}
 
   

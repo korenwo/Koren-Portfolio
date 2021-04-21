@@ -37,10 +37,10 @@ onInit={(typewriter) => {
 
 />
                     <Link to="/MyProjects">
-                        <li className="projects">My-Projects</li>
+                        <button className="button">My-Projects</button>
                     </Link>
                     <Link to="/Contact">
-                        <li className="contact">Contact</li>
+                    <button className="button">Contact</button>
                     </Link>
                 </div>
             </div>           
