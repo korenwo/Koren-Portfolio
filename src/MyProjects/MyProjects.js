@@ -9,16 +9,16 @@ function MyProjects (props) {
         <div>
             <h1 className="project">My Projects</h1>
             <div className="toWeb">
-                <Link to="/https://todooooooooooooo.herokuapp.com/">
+                <a href="https://todooooooooooooo.herokuapp.com/">
                     <FcTodoList/>
                     <h2>Todo-App</h2>
-                </Link>
+                </a>
             </div>
             <div className="toWeb">
-                <Link to="/https://vast-tor-85654.herokuapp.com/Login/">
+                <a href="https://vast-tor-85654.herokuapp.com/Login/">
                     <RiInstagramFill/>
                     <h2>Instagram</h2>
-                </Link>
+                </a>
             </div>
             <div className="toWeb">
                 <Link to="/">
