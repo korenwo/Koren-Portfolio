@@ -13,10 +13,10 @@ function Contact (props) {
                 <FontAwesomeIcon icon={faPhone} /> 0547944889 <br></br>
                     Email:korenwohl@gmail.com</div>
                 <div className="links">
-                <a href="/https://www.linkedin.com/in/koren-wohl-a1933b202/">
+                <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
                     <FontAwesomeIcon icon={faLinkedin} />
                     </a>
-                    <a href="/https://github.com/korenwo">
+                    <a href="https://github.com/korenwo">
                     <FontAwesomeIcon icon={faGithub} />
                     </a>
              
