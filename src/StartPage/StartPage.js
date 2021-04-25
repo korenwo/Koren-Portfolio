@@ -25,11 +25,11 @@ function StartPage () {
                 
                     <Typewriter
 onInit={(typewriter) => {
-    typewriter.typeString("HTML,").pauseFor(2000).start()
-    typewriter.typeString("S(CSS),").pauseFor(2000).start()
-    typewriter.typeString("JavaScript (ES6+),").pauseFor(2000).start()
-    typewriter.typeString("React,").pauseFor(2000).start()
-    typewriter.typeString("Node.js,").pauseFor(1500).start()
+    typewriter.typeString("HTML, ").pauseFor(2000).start()
+    typewriter.typeString("S(CSS), ").pauseFor(2000).start()
+    typewriter.typeString("JavaScript (ES6+), ").pauseFor(2000).start()
+    typewriter.typeString("React, ").pauseFor(2000).start()
+    typewriter.typeString("Node.js, ").pauseFor(1500).start()
     typewriter.typeString("MongoDB ").pauseFor(1500).start()
     typewriter.typeString("And more...").pauseFor(1500).start()
    
