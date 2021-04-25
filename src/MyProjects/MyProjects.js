@@ -9,7 +9,7 @@ function MyProjects (props) {
         <div>
             <h1 className="project">My Projects</h1>
             <div className="toWeb">
-                <a href="https://todooooooooooooo.herokuapp.com/">
+                <a href="https://korentodo.netlify.app/">
                     <FcTodoList/>
                     <h2>Todo-App</h2>
                 </a>
