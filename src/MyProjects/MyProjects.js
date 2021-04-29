@@ -21,6 +21,12 @@ function MyProjects (props) {
                 </a>
             </div>
             <div className="toWeb">
+                <a href="https://korennature.netlify.app/">
+                    <RiInstagramFill/>
+                    <h2>Instagram</h2>
+                </a>
+            </div>
+            <div className="toWeb">
                 <Link to="/">
                     <RiHome2Fill />
                     <h2>Home Page</h2>
