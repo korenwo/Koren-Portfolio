@@ -23,21 +23,17 @@
 
 @media only screen and (min-width : 1224px) {
 
-    .project {
-    display: flex;
-    justify-content:space-around;
-    font-size: 50px;
-    padding-top: 30px;
-    color:rgb(58, 46, 107); font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
-    background : linear-gradient(
-        rgb(232, 104, 104),
-        rgb(104, 232, 117)
-    );
+        .project {
+        display: flex;
+        justify-content:space-around;
+        font-size: 50px;
+        padding-top: 30px;
+        color:rgb(40, 141, 45); font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
     }
 
-    .toWeb {
-    text-align: center;
-    font-size: 20px;
+        .toWeb {
+        text-align: center;
+        font-size: 20px;
     }
 
 }

@@ -1,13 +1,16 @@
 import React from 'react';
 import './MyProjects.css';
 import { Link } from 'react-router-dom';
-import { RiHome2Fill, RiInstagramFill } from 'react-icons/ri';
-import { FcTodoList } from 'react-icons/fc'
+import { RiInstagramFill } from 'react-icons/ri';
+import { FcTodoList } from 'react-icons/fc';
+import { GrOverview } from 'react-icons/gr';
+import { ImHome } from 'react-icons/im';
 
 function MyProjects (props) {
     return(
         <div>
             <h1 className="project">My Projects</h1>
+            <hr></hr>
             <div className="toWeb">
                 <a href="https://korentodo.netlify.app/">
                     <FcTodoList/>
@@ -22,13 +25,13 @@ function MyProjects (props) {
             </div>
             <div className="toWeb">
                 <a href="https://korennature.netlify.app/">
-                    <RiInstagramFill/>
-                    <h2>Instagram</h2>
+                    <GrOverview/>
+                    <h2>Nature-web</h2>
                 </a>
             </div>
             <div className="toWeb">
                 <Link to="/">
-                    <RiHome2Fill />
+                    <ImHome />
                     <h2>Home Page</h2>
                 </Link>
             </div>       
