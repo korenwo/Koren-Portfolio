@@ -3,7 +3,6 @@ import './MyProjects.css';
 import { Link } from 'react-router-dom';
 import { RiInstagramFill } from 'react-icons/ri';
 import { FcTodoList } from 'react-icons/fc';
-import { GrOverview } from 'react-icons/gr';
 import { ImHome } from 'react-icons/im';
 
 function MyProjects (props) {
@@ -21,12 +20,6 @@ function MyProjects (props) {
                 <a href="https://vast-tor-85654.herokuapp.com/Login/">
                     <RiInstagramFill/>
                     <h2>Instagram</h2>
-                </a>
-            </div>
-            <div className="toWeb">
-                <a href="https://korennature.netlify.app/">
-                    <GrOverview/>
-                    <h2>Nature-web</h2>
                 </a>
             </div>
             <div className="toWeb">

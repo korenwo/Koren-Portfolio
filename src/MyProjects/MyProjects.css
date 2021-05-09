@@ -7,10 +7,6 @@
         line-height:20px;
         font-size: 30px;
         color:rgb(58, 46, 107); font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
-        background : linear-gradient(
-            rgb(232, 104, 104),
-            rgb(104, 232, 117)
-        );
         }
     
         .toWeb{
