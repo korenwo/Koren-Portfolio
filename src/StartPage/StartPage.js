@@ -9,8 +9,8 @@ import { animation, transition } from './../animations/index';
 function StartPage () {
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animation} transition={transition}>
-            <div>
-                <h1 className="name">KOREN WOHL</h1>
+            <div className="box">
+                <h1>KOREN WOHL</h1>
                 <img src={me} className="me" alt="myPhoto" />
                 <div className="about">
                     Welcome! I am 
@@ -39,9 +39,6 @@ function StartPage () {
     }}
 
     />
-                        <Link to="/MyProjects">
-                            <button className="button">My-Projects</button>
-                        </Link>
                         <Link to="/Contact">
                         <button className="button">Contact</button>
                         </Link>
