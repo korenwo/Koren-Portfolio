@@ -11,7 +11,7 @@ function Contact (props) {
     
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
-            <div>
+            <div className="box">
                 <div className="callUs">
                     <FontAwesomeIcon icon={faPhone} /> 0547944889 <br></br>
                         Email:korenwohl@gmail.com</div>

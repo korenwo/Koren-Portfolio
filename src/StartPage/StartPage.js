@@ -4,11 +4,11 @@ import './StartPage.css';
 import { Link } from 'react-router-dom';
 import Typewriter from "typewriter-effect";
 import { motion } from 'framer-motion'
-import { animation, transition } from './../animations/index';
+import { animationOne, transition } from './../animations/index';
 
 function StartPage () {
     return (
-        <motion.div initial="out" animate="in" exit="out" variants={animation} transition={transition}>
+        <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
                 <h1>KOREN WOHL</h1>
                 <img src={me} className="me" alt="myPhoto" />
@@ -41,6 +41,9 @@ function StartPage () {
     />
                         <Link to="/Contact">
                         <button className="button">Contact</button>
+                        </Link>
+                        <Link to="/Projects">
+                        <button className="button">Projects</button>
                         </Link>
                     </div>
                 </div>           
