@@ -12,7 +12,7 @@ return (
     <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
         <div className="box">
             <h1 className="callUs">My-Projects</h1>
-            <a href="http://vast-tor-85654.herokuapp.com/Login"><li className="callUs">Mini-Instagram</li></a>
+            <a href="http://vast-tor-85654.herokuapp.com/Login"><li className="callUs">Mini-Instagram with chat</li></a>
             <h3>(take 3min to upload... please wait)</h3>
             <div className="links">
                 <Link to="/">
