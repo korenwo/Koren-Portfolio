@@ -8,7 +8,17 @@ import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 
 function Contact (props) {
-    
+ 
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/60f2ad0ad6e7610a49abb6b1/1fapv7t1v';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
