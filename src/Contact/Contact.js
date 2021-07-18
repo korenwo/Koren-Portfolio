@@ -8,8 +8,8 @@ import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 
 function Contact (props) {
- 
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+
+    var Tawk_API="eb457b4f55ccc072b632e0c508a71c2bc2034e2a"||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
@@ -19,6 +19,7 @@ function Contact (props) {
     s0.parentNode.insertBefore(s1,s0);
     })();
 
+ 
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
