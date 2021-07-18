@@ -7,10 +7,10 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 
-function chat(props) {
+function Tawk_API() {
     
     var Tawk_API="eb457b4f55ccc072b632e0c508a71c2bc2034e2a";
-    (function(Tawk_API){
+    (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
     s1.src='https://embed.tawk.to/60f45bf9649e0a0a5ccccc22/1fat8ei89';
@@ -37,9 +37,8 @@ function chat(props) {
                     </Link>
                 </div>       
             </div>
-            <Tawk_API/>
         </motion.div>   
     );
 }
 
-export default chat;
+export default Tawk_API;
