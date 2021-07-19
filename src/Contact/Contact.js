@@ -7,9 +7,9 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 
-function Tawk_API() {
+function Contact() {
     
-    var Tawk_API="eb457b4f55ccc072b632e0c508a71c2bc2034e2a";
+    "eb457b4f55ccc072b632e0c508a71c2bc2034e2a";
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
@@ -41,4 +41,4 @@ function Tawk_API() {
     );
 }
 
-export default Tawk_API;
+export default Contact;
