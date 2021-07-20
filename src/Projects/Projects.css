@@ -1,7 +1,6 @@
 @media only screen and (max-device-width : 480px) {
 
     h3{
-        color: whitesmoke;
         text-align: center;
         font-size: 10px;
     }
@@ -11,10 +10,12 @@
 @media only screen and (min-width : 1224px) {
 
     h3{
-        color: whitesmoke;
         text-align: center;
         font-size: 10px;
     }
 
+    h2{
+        font-size: 30px;
+    }
 
 }

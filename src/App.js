@@ -5,8 +5,10 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Contact from './Contact/Contact';
 import Projects from './Projects/Projects';
 import {AnimatePresence} from 'framer-motion'
+import NewsList from './components/NewsList';
 
 function App() {
+
   return (
     <div>
       <AnimatePresence exitBeforeEnter>
@@ -22,8 +24,9 @@ function App() {
               <Projects />
             </Route>
             <Route path="/" exact>
-                <StartPage />
+              <StartPage />
           </Route>
+              <NewsList></NewsList>
           </Switch>
         </BrowserRouter>
       </AnimatePresence>

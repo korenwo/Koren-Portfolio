@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 
 function StartPage () {
+
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">

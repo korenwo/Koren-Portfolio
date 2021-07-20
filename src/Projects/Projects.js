@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { animationOne, transition } from './../animations/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faNewspaper } from '@fortawesome/free-regular-svg-icons';
 
 function Projects (props) {
 
@@ -15,7 +16,12 @@ return (
             <a href="http://vast-tor-85654.herokuapp.com/Login"><li className="callUs">Mini-Instagram</li></a>
             <h3>(take 3min to upload... please wait)</h3>
             <div className="links">
-                <Link to="/">
+                <Link to="/NewsList"><li className="callUs">News 24/7</li>
+                    <FontAwesomeIcon icon={faNewspaper} />
+                </Link>
+            </div>
+            <div className="links">
+                <Link to="/"><li className="callUs">Home Page</li>
                     <FontAwesomeIcon icon={faHome} />
                 </Link>
                 </div>       
