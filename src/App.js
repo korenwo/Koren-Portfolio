@@ -25,10 +25,10 @@ function App() {
             </Route>
             <Route path="/" exact>
               <StartPage />
-          </Route>
-          <Route path="/NewsList">
+            </Route>
+            <Route path="/NewsList">
               <NewsList />
-          </Route>
+            </Route>
           </Switch>
         </BrowserRouter>
       </AnimatePresence>
