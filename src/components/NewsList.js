@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import  Axios  from "axios";
+import Axios  from "axios";
 import NewsItem from './NewsItem';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
