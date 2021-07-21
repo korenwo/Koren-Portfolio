@@ -5,8 +5,6 @@ import { motion } from 'framer-motion'
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { animationOne, transition } from './../animations/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNewspaper } from '@fortawesome/free-regular-svg-icons';
-import { faSkyatlas } from '@fortawesome/free-brands-svg-icons';
 
 function Projects (props) {
 
