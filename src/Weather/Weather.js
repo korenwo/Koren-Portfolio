@@ -11,7 +11,7 @@ const WeatherApp = () => {
 const getWeatherData = (city, country) => {
     axios({
         method: "GET",
-        url: `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=f2f7e33fbb51c9666538fa3e49b1d959`
+        url: `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=f2f7e33fbb51c9666538fa3e49b1d959`
     })
     .then((response) => {
         console.log(response.data.main.temp);
