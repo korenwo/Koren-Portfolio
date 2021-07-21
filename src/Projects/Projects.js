@@ -6,6 +6,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { animationOne, transition } from './../animations/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNewspaper } from '@fortawesome/free-regular-svg-icons';
+import { faSkyatlas } from '@fortawesome/free-brands-svg-icons';
 
 function Projects (props) {
 
@@ -17,6 +18,11 @@ return (
             <div className="links">
                 <Link to="/NewsList"><li className="callUs">News 24/7</li>
                     <FontAwesomeIcon icon={faNewspaper} />
+                </Link>
+            </div>
+            <div className="links">
+                <Link to="/WeatherApp"><li className="callUs">Weather</li>
+                    <FontAwesomeIcon icon={faSkyatlas} />
                 </Link>
             </div>
             <div className="links">

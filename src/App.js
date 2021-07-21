@@ -6,6 +6,7 @@ import Contact from './Contact/Contact';
 import Projects from './Projects/Projects';
 import {AnimatePresence} from 'framer-motion'
 import NewsList from './components/NewsList';
+import WeatherApp from './Weather/Weather';
 
 function App() {
 
@@ -23,11 +24,14 @@ function App() {
             <Route path="/Projects">
               <Projects />
             </Route>
-            <Route path="/" exact>
-              <StartPage />
-            </Route>
             <Route path="/NewsList">
               <NewsList />
+            </Route>
+            <Route path="/WeatherApp">
+              <WeatherApp />
+            </Route>
+            <Route path="/" exact>
+              <StartPage />
             </Route>
           </Switch>
         </BrowserRouter>
