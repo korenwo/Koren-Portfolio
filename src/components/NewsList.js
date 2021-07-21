@@ -8,7 +8,7 @@ const NewsList = () => {
     useEffect(() => {
         const getArticles = async () => {
             const res = await Axios.get(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=4a7c1ea3f61d415db06a9786953b13c3");
+        "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=4a7c1ea3f61d415db06a9786953b13c3");
     
     setArticles(res.data.articles);
     console.log(res);
