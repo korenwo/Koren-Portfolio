@@ -4,6 +4,7 @@ import axios from "axios";
 
 const WeatherApp = () => {
     const [temperature, setTemperature] = useState("");
+    const [desc, setDesc] = useState("");
     const [city, setCity] = useState("London");
     const [country, setCountry] = useState("UK");
 
@@ -16,6 +17,7 @@ const getWeatherData = (city, country) => {
     .then((response) => {
         console.log(response.data.main.temp);
         setTemperature(response.data.main.temp -273.15)
+        setDesc(response.data.weather[0].main)
     })
     .catch((error) => {
         console.log(error);
@@ -29,17 +31,18 @@ return (
             style={{
                 height: "150px",
                 width: "450px",
-                backgroundColor: "lightgreen",
+                backgroundColor: "lightblue",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 fontSize: "25px",
             }}
         >
+            {new Date().toLocaleString()}
             <br/>
             {city} Weather
             <br />
-            {Math.round(temperature * 100) / 100} C
+            {Math.round(temperature * 100) / 100} C - {desc}
             </div>
             <br />
             <input
