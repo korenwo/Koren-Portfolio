@@ -18,11 +18,9 @@ return (
             <a href="https://korentodo.netlify.app/"><li className="callUs">Todo-List</li></a>
             <div className="links">
                 <Link to="/WeatherApp"><li className="callUs">Weather</li>
-                    <FontAwesomeIcon icon={faSkyatlas} />
                 </Link>
                 <div className="links">
                 <Link to="/NewsList"><li className="callUs">News 24/7</li>
-                    <FontAwesomeIcon icon={faNewspaper} />
                 </Link>
             </div>
             </div>
