@@ -5,7 +5,6 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Contact from './Contact/Contact';
 import Projects from './Projects/Projects';
 import {AnimatePresence} from 'framer-motion'
-import NewsList from './components/NewsList';
 import WeatherApp from './Weather/Weather';
 
 function App() {
@@ -23,9 +22,6 @@ function App() {
             </Route>
             <Route path="/Projects">
               <Projects />
-            </Route>
-            <Route path="/NewsList">
-              <NewsList />
             </Route>
             <Route path="/WeatherApp">
               <WeatherApp />

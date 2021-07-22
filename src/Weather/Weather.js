@@ -25,47 +25,50 @@ const getWeatherData = (city, country) => {
 };
 
 return (
-    <>
-    <div style={{ marginLeft: "33%" }}>
-        <div 
-            style={{
-                height: "150px",
-                width: "450px",
-                backgroundColor: "lightblue",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                fontSize: "25px",
-            }}
-        >
-            {new Date().toLocaleString()}
-            <br/>
-            {city} Weather
-            <br />
-            {Math.round(temperature * 100) / 100} C - {desc}
-            </div>
-            <br />
-            <input
-                type="text"
-                value={city}
-                onChange={(e) => setCity(e.target.value)}
-            />
-            <input
-                type="text"
-                value={country}
-                onChange={(e) => setCountry(e.target.value)}
-            />
-            <button
-                onClick={() => {
-                    getWeatherData(city, country);
-                }}                
+    <div className="box">
+        <div style={{ }}>
+            <div 
+                style={{
+                    height: "150px",
+                    width: "100%",
+                    backgroundColor: "rgba(0, 0, 255, 0.3)",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    fontSize: "25px",
+                    color:"whitesmoke"
+                }}
             >
-                get
-            </button>
-           </div>
-        </> 
-    );
-};
+                {new Date().toLocaleString()}
+                <br/>
+                {city} Weather
+                <br />
+                {Math.round(temperature * 100) / 100} °C - {desc}
+                </div>
+                <br />
+                <div style={{textAlign: "center" }}>
+                    <input
+                        type="text"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        value={country}
+                        onChange={(e) => setCountry(e.target.value)}
+                    />
+                    <button
+                        onClick={() => {
+                            getWeatherData(city, country);
+                        }}                
+                    >
+                        get
+                    </button>
+                    </div>
+                </div>
+            </div> 
+        );
+    };
 
 render (<WeatherApp />, document.querySelector("#root"));
 

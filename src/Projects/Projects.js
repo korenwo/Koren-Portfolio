@@ -17,10 +17,6 @@ return (
             <div className="links">
                 <Link to="/WeatherApp"><li className="callUs">Weather</li>
                 </Link>
-                <div className="links">
-                <Link to="/NewsList"><li className="callUs">News 24/7</li>
-                </Link>
-            </div>
             </div>
             <div className="links">
                 <Link to="/"><li className="callUs">Home Page</li>
