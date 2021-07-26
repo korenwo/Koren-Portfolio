@@ -14,6 +14,7 @@ return (
             <h1 className="callUs">My-Projects</h1>
             <a href="http://vast-tor-85654.herokuapp.com/Login"><li className="callUs">Mini-Instagram</li></a>
             <a href="https://korentodo.netlify.app/"><li className="callUs">Todo-List</li></a>
+            <a href="https://korencoins.netlify.app/"><li className="callUs">Coins-App</li></a>
             <div className="links">
                 <Link to="/WeatherApp"><li className="callUs">Weather</li>
                 </Link>
