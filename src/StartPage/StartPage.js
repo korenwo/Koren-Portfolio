@@ -14,7 +14,7 @@ function StartPage () {
                 <h1>KOREN WOHL</h1>
                 <img src={me} className="me" alt="myPhoto" />
                 <div className="about">
-                    Welcome! I am 
+                    Welcome! I am a
                     Web Developer with advanced skills in Front End Development
         
                     <div className="onMe">
