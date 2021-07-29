@@ -9,6 +9,35 @@
 
 @media only screen and (min-width : 1224px) {
 
+    .box1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        min-height: 40em;
+        background-image: url(https://www.shore-access.com/wp-content/uploads/2017/08/portfolio-background.jpg);
+      }
+      
+      .callUs1 {
+        background: transparent;
+        border-color:  whitesmoke;
+        border-style: solid;
+        border-radius: 35px;
+        border-width: 10px;
+        padding: 5px;
+        width: 480px;
+        height: 100px;
+        margin-top: 10px;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+    }
+
+
     h3{
         text-align: center;
         font-size: 10px;

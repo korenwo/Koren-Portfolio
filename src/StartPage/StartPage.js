@@ -44,7 +44,7 @@ function StartPage () {
                         <button className="button">Contact</button>
                         </Link>
                         <Link to="/Projects">
-                        <button className="button">Projects</button>
+                        <button className="button">My-Projects</button>
                         </Link>
                     </div>
                 </div>           
