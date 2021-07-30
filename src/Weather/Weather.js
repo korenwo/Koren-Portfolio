@@ -25,7 +25,7 @@ const getWeatherData = (city, country) => {
 };
 
 return (
-    <div className="box">
+    <div className="box1">
         <div style={{ }}>
             <div 
                 style={{

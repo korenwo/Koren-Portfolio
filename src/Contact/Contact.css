@@ -2,14 +2,12 @@
 
     .callUs{
         font-size: 20px;
-        text-align: center;
         line-height: 80px;
         color: black;  font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
         padding-top: 30px;
     }
 
     .links{
-        text-align: center;
         font-size: 40px;
         color: 'green'; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
     }
@@ -22,20 +20,23 @@
 
 @media only screen and (min-width : 1224px) {
 
+    .box1{
+        display: flex;
+    }
+
     .callUs{
         font-size: 30px;
-        text-align: center;
-        color: wheat; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
-        padding-top: 30px;
+        color: black; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
+        margin-top: 20px;
     }
 
     .links{
-        text-align: center;
         font-size: 60px;
+        margin-top: 20px;
     }
     
     a {
-        color: wheat; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
+        color: black; font-family: 'Trocchi', serif;  font-weight: normal; line-height: 48px; margin: 0; 
     }
 
 }
