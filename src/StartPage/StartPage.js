@@ -5,13 +5,17 @@ import { Link } from 'react-router-dom';
 import Typewriter from "typewriter-effect";
 import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
 
 function StartPage () {
+
+    const Bounce = styled.div`animation : 2s ${keyframes`${bounce}`} infinite`;
 
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
-                <h1>KOREN WOHL</h1>
+            <Bounce><h1>KOREN WOHL</h1></Bounce>
                 <img src={me} className="me" alt="myPhoto" />
                 <div className="about">
                     Welcome! I am a
