@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faHome, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
@@ -24,7 +24,7 @@ function Contact() {
             <div className="box1">
                 <div className="callUs">
                     <FontAwesomeIcon icon={faPhone} /> 0547944889 <br></br>
-                        Email:korenwohl@gmail.com</div>
+                    <FontAwesomeIcon icon={faMailBulk} /> korenwohl@gmail.com</div>
                     <div className="links">
                     <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
                         <FontAwesomeIcon icon={faLinkedin} />
