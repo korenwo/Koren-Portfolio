@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import me from './me.jpg';
 import './StartPage.css';
 import { Link } from 'react-router-dom';
@@ -7,11 +7,33 @@ import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
+import Modal from "react-modal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faHome, faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+
+
+Modal.setAppElement("#root");
+
 
 function StartPage () {
 
+    const [showContact, setShowContact] = useState(false);
+
     const Bounce = styled.div`animation : 2s ${keyframes`${bounce}`} infinite`;
 
+    var Tawk_API="218fed3648cd822d08c2335e9ac9be415cce1ddf"||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/60f5660a649e0a0a5ccce9d0/1fav9d68r';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+
+
+    
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
@@ -44,16 +66,32 @@ function StartPage () {
     }}
 
     />
-                        <Link to="/Contact">
-                        <button className="button">Contact</button>
-                        </Link>
-                        <Link to="/Projects">
-                        <button className="button">My-Projects</button>
-                        </Link>
-                    </div>
-                </div>           
+                       
+                <button className="button" onClick={() => setShowContact(true)}>Contact</button>
+                <Modal
+                    isOpen={showContact}
+                    onRequestClose={() => setShowContact(false)}
+                    contentLabel="Contact"
+                >
+                    <div className="callUs">
+                        <FontAwesomeIcon icon={faPhone} /> 0547944889 <br></br>
+                        <FontAwesomeIcon icon={faMailBulk} /> korenwohl@gmail.com</div>
+                    <div className="links">
+                        <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                        <a href="https://github.com/korenwo/">
+                        <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                    </div>       
+                </Modal>
+                <Link to="/Projects">
+                    <button className="button">My-Projects</button>
+                </Link>
             </div>
-        </motion.div>
+        </div>           
+    </div>
+</motion.div>
     );
 }
 
