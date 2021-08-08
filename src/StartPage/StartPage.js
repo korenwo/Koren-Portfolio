@@ -9,7 +9,7 @@ import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import Modal from "react-modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faHome, faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 
@@ -73,7 +73,7 @@ function StartPage () {
                     onRequestClose={() => setShowContact(false)}
                     contentLabel="Contact"
                 >
-                    <div className="callUs">
+                    <div className="about">
                         <FontAwesomeIcon icon={faPhone} /> 0547944889 <br></br>
                         <FontAwesomeIcon icon={faMailBulk} /> korenwohl@gmail.com</div>
                     <div className="links">

@@ -2,7 +2,6 @@ import './App.css';
 import { React } from 'react';
 import StartPage from './StartPage/StartPage';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import Contact from './Contact/Contact';
 import Projects from './Projects/Projects';
 import {AnimatePresence} from 'framer-motion'
 import WeatherApp from './Weather/Weather';
@@ -16,9 +15,6 @@ function App() {
           <Switch>
             <Route path="StartPage">
               <StartPage/>
-            </Route>
-            <Route path="/contact">
-              <Contact />
             </Route>
             <Route path="/Projects">
               <Projects />
