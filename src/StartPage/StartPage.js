@@ -64,7 +64,7 @@ function StartPage () {
 
     />            
                 <button className="button" onClick={() => setShowContact(true)}>Contact</button>
-                <Modal
+                <Modal 
                     isOpen={showContact}
                     onRequestClose={() => setShowContact(false)}
                     contentLabel="Contact"
