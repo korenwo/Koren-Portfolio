@@ -12,13 +12,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
-
 Modal.setAppElement("#root");
-
 
 function StartPage () {
 
     const [showContact, setShowContact] = useState(false);
+    const [showProjects, setShowProjects] = useState(false);
 
     const Bounce = styled.div`animation : 2s ${keyframes`${bounce}`} infinite`;
 
@@ -32,8 +31,6 @@ function StartPage () {
     s0.parentNode.insertBefore(s1,s0);
     })();
 
-
-    
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
@@ -65,8 +62,7 @@ function StartPage () {
     
     }}
 
-    />
-                       
+    />            
                 <button className="button" onClick={() => setShowContact(true)}>Contact</button>
                 <Modal
                     isOpen={showContact}
@@ -76,7 +72,7 @@ function StartPage () {
                     <div className="about">
                         <FontAwesomeIcon icon={faPhone} /> 0547944889 <br></br>
                         <FontAwesomeIcon icon={faMailBulk} /> korenwohl@gmail.com</div>
-                    <div className="links">
+                    <div className="about">
                         <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
                         <FontAwesomeIcon icon={faLinkedin} />
                         </a>
@@ -85,9 +81,21 @@ function StartPage () {
                         </a>
                     </div>       
                 </Modal>
-                <Link to="/Projects">
-                    <button className="button">My-Projects</button>
-                </Link>
+                <Modal
+                    isOpen={showProjects}
+                    onRequestClose={() => setShowProjects(false)}
+                    contentLabel="Projects"
+                >
+                <div className="box1">
+                    <a href="http://vast-tor-85654.herokuapp.com/Login"><div className="callUs1">Mini-Instagram</div></a>
+                    <a href="https://korentodo.netlify.app/"><div className="callUs1">Todo-List</div></a>
+                    <a href="https://korencoins.netlify.app/"><div className="callUs1">Coins-App</div></a>
+                    <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris-App</div></a>
+                    <Link to="/WeatherApp"><div className="callUs1">Weather</div></Link>
+                    <Link to="/"><div className="callUs1">MyApp</div></Link>
+                    </div>
+                </Modal>
+                <button className="button" onClick={() => setShowProjects(true)}>My-Projects</button>
             </div>
         </div>           
     </div>
