@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import Typewriter from "typewriter-effect";
 import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
-import styled, { keyframes } from 'styled-components';
-import { bounce } from 'react-animations';
 import Modal from "react-modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faMailBulk } from '@fortawesome/free-solid-svg-icons';
@@ -18,8 +16,6 @@ function StartPage () {
 
     const [showContact, setShowContact] = useState(false);
     const [showProjects, setShowProjects] = useState(false);
-
-    const Bounce = styled.div`animation : 2s ${keyframes`${bounce}`} infinite`;
 
     var Tawk_API="218fed3648cd822d08c2335e9ac9be415cce1ddf"||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -34,7 +30,11 @@ function StartPage () {
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
-            <Bounce><h1>KOREN WOHL</h1></Bounce>
+                <h1><Typewriter onInit ={(typewriter) => {
+                    typewriter.typeString("Koren Wohl").pauseFor(1000).start()
+                        }}
+                    />
+                </h1>
                 <img src={me} className="me" alt="myPhoto" />
                 <div className="about">
                     Welcome! I am a

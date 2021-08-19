@@ -31,7 +31,7 @@ return (
                 style={{
                     height: "150px",
                     width: "100%",
-                    backgroundColor: "rgba(0, 0, 255, 0.3)",
+                    backgroundColor: "skyblue",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",

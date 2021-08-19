@@ -19,6 +19,7 @@
     "keyframes": "^2.3.0",
     "news-api": "0.0.1",
     "react": "^17.0.1",
+    "react-animated-css": "^1.2.1",
     "react-animations": "^1.0.0",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
