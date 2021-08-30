@@ -93,7 +93,6 @@ function StartPage () {
                     <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris- built with React</div></a>
                     <a href="https://korenstore.herokuapp.com/"><div className="callUs1">Commerce- built with React, node.js, restApi, mongodb</div></a>
                     <Link to="/WeatherApp"><div className="callUs1">Weather- built with React, using weatherApi</div></Link>
-                    <Link to="/"><div className="callUs1">MyApp</div></Link>
                     </div>
                 </Modal>
                 <button className="button" onClick={() => setShowProjects(true)}>My-Projects</button>
