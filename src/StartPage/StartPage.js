@@ -42,13 +42,13 @@ function StartPage () {
         
                     <div className="onMe">
 
-                        <li>Passionate about perfect user experience.</li> 
+                        <nav>-Passionate about perfect user experience.</nav> 
 
-                        <li> Experienced with both server and client web development, with understanding of performance, security and maintainability.</li>
+                        <nav>-Experienced with both server and client web development, with understanding of performance, security and maintainability.</nav>
 
-                        <li> Self learner of new technologies and software development methodologies.</li>
+                        <nav>-Self learner of new technologies and software development methodologies.</nav>
 
-                        <div className="here">Here are a few technologies I've been working with :</div>
+                        <nav className="here">Here are a few technologies I've been working with :</nav>
                     
                         <Typewriter
     onInit={(typewriter) => {
@@ -87,12 +87,12 @@ function StartPage () {
                     contentLabel="Projects"
                 >
                 <div className="box1">
-                    <a href="http://vast-tor-85654.herokuapp.com/Login"><div className="callUs1">Mini-Instagram</div></a>
-                    <a href="https://korentodo.netlify.app/"><div className="callUs1">Todo-List</div></a>
-                    <a href="https://korencoins.netlify.app/"><div className="callUs1">Coins-App</div></a>
-                    <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris-App</div></a>
-                    <a href="https://korenstore.herokuapp.com/"><div className="callUs1">Commerce</div></a>
-                    <Link to="/WeatherApp"><div className="callUs1">Weather</div></Link>
+                    <a href="http://vast-tor-85654.herokuapp.com/Login"><div className="callUs1">Instagram- built with React, node.js, restApi, mongodb</div></a>
+                    <a href="https://korentodo.netlify.app/"><div className="callUs1">TodoList- built with react, Styled by styled component</div></a>
+                    <a href="https://korencoins.netlify.app/"><div className="callUs1">Coins-App- built with React</div></a>
+                    <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris- built with React</div></a>
+                    <a href="https://korenstore.herokuapp.com/"><div className="callUs1">Commerce- built with React, node.js, restApi, mongodb</div></a>
+                    <Link to="/WeatherApp"><div className="callUs1">Weather- built with React, using weatherApi</div></Link>
                     <Link to="/"><div className="callUs1">MyApp</div></Link>
                     </div>
                 </Modal>
