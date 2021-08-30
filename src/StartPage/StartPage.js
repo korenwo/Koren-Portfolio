@@ -74,10 +74,10 @@ function StartPage () {
                         <FontAwesomeIcon icon={faMailBulk} /> korenwohl@gmail.com</div>
                     <div className="about">
                         <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        <FontAwesomeIcon className="icon" icon={faLinkedin} />
                         </a>
                         <a href="https://github.com/korenwo/">
-                        <FontAwesomeIcon icon={faGithub} />
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
                         </a>
                     </div>       
                 </Modal>
