@@ -48,7 +48,7 @@ function StartPage () {
 
                         <nav>-Self learner of new technologies and software development methodologies.</nav>
 
-                        <nav className="here">Here are a few technologies I've been working with :</nav>
+                        <div className="here">Here are a few technologies I've been working with :</div>
                     
                         <Typewriter
     onInit={(typewriter) => {
