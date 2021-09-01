@@ -2,6 +2,7 @@
 
   .box {
     position: absolute;
+    background-color: lightblue;
   }
   
   h1{
@@ -53,7 +54,7 @@
     outline: none;
     color: #fff;
     background-color: black;
-    border: none;
+    border-color: black;
     border-radius: 15px;
     box-shadow: 0 9px rgb(141, 58, 58);
     margin-top: 10px;
@@ -125,6 +126,7 @@
 
 .box {
   position: absolute;
+  background-color: lightblue;
 }
 
 h1{
@@ -175,10 +177,9 @@ h1{
       color: black;
       background-color: lightblue;
       margin-left: 10px;
-      border: none;
+      border-color: black;
       border-radius: 15px;
       box-shadow: 0 9px rgb(82, 103, 134);
-
     }
     
     .button:hover {background-color: #3c366e}
