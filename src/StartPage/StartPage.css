@@ -3,6 +3,7 @@
   .box {
     position: absolute;
     background-image: url("wood.jpg");
+    height: 100%;
   }
   
   h1{
