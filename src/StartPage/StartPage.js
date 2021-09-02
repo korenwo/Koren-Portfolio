@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import me from './me.jpg';
+import iPhone from './iPhone.jpg';
 import './StartPage.css';
 import { Link } from 'react-router-dom';
 import Typewriter from "typewriter-effect";
@@ -87,12 +88,12 @@ function StartPage () {
                     contentLabel="Projects"
                 >
                 <div className="box1">
-                    <a href="http://vast-tor-85654.herokuapp.com/Login"><div className="callUs1">Instagram- built with React, node.js, restApi, mongodb</div></a>
-                    <a href="https://korentodo.netlify.app/"><div className="callUs1">TodoList- built with react, Styled by styled component</div></a>
-                    <a href="https://korencoins.netlify.app/"><div className="callUs1">Coins-App- built with React</div></a>
-                    <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris- built with React</div></a>
-                    <a href="https://korenstore.herokuapp.com/"><div className="callUs1">Commerce- built with React, node.js, restApi, mongodb</div></a>
-                    <Link to="/WeatherApp"><div className="callUs1">Weather- built with React, using weatherApi</div></Link>
+                    <a href="http://vast-tor-85654.herokuapp.com/Login"><div className="callUs1">Instagram <nav>built with React, node.js, restApi, mongodb</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
+                    <a href="https://korentodo.netlify.app/"><div className="callUs1">TodoList <nav>built with react, Styled by styled component</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
+                    <a href="https://korencoins.netlify.app/"><div className="callUs1">Coins-App <nav>built with React</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
+                    <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris <nav>built with React</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
+                    <a href="https://korenstore.herokuapp.com/"><div className="callUs1">Commerce <nav>built with React, node.js, restApi, mongodb</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
+                    <Link to="/WeatherApp"><div className="callUs1">Weather <nav>built with React, using weatherApi</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></Link>
                     </div>
                 </Modal>
                 <button className="button" onClick={() => setShowProjects(true)}>My-Projects</button>
