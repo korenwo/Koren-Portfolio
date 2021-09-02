@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import wood from './wood.jpg';
 import me from './me.jpg';
 import iPhone from './iPhone.jpg';
 import './StartPage.css';
@@ -88,12 +89,24 @@ function StartPage () {
                     contentLabel="Projects"
                 >
                 <div className="box1">
-                    <a href="http://vast-tor-85654.herokuapp.com/Login"><div className="callUs1">Instagram <nav>built with React, node.js, restApi, mongodb</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
-                    <a href="https://korentodo.netlify.app/"><div className="callUs1">TodoList <nav>built with react, Styled by styled component</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
-                    <a href="https://korencoins.netlify.app/"><div className="callUs1">Coins-App <nav>built with React</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
-                    <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris <nav>built with React</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
-                    <a href="https://korenstore.herokuapp.com/"><div className="callUs1">Commerce <nav>built with React, node.js, restApi, mongodb</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></a>
-                    <Link to="/WeatherApp"><div className="callUs1">Weather <nav>built with React, using weatherApi</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /></div></Link>
+                    <a href="http://vast-tor-85654.herokuapp.com/Login"><div className="callUs1">Instagram <nav>built with React, node.js, restApi, mongodb</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /><a href="https://github.com/korenwo/instagram-ui">
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                        </a></div></a>
+                    <a href="https://korentodo.netlify.app/"><div className="callUs1">TodoList <nav>built with react, Styled by styled component</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /><a href="https://github.com/korenwo/todo-app">
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                        </a></div></a>
+                    <a href="https://korencoins.netlify.app/"><div className="callUs1">Coins-App <nav>built with React</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /><a href="https://github.com/korenwo/Coin-App">
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                        </a></div></a>
+                    <a href="https://tetriskoren.herokuapp.com/"><div className="callUs1">Tetris <nav>built with React</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /><a href="https://github.com/korenwo/React-Tetris">
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                        </a></div></a>
+                    <a href="https://korenstore.herokuapp.com/"><div className="callUs1">Commerce <nav>built with React, node.js, restApi, mongodb</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /><a href="https://github.com/korenwo/store-api">
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                        </a></div></a>
+                    <Link to="/WeatherApp"><div className="callUs1">Weather <nav>built with React, using weatherApi</nav><img src={iPhone} className="iPhone" alt="PhonePhoto" /><a href="https://github.com/korenwo/Koren-Portfolio/tree/main/src/Weather">
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                        </a></div></Link>
                     </div>
                 </Modal>
                 <button className="button" onClick={() => setShowProjects(true)}>My-Projects</button>
