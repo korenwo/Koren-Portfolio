@@ -55,7 +55,7 @@ function StartPage () {
     />            
                     
                     <div className="about">
-                        <a href="https://wa.me/97254944889" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+                        <a href="https://wa.me/972547944889" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
                         <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
                             <FontAwesomeIcon className="icon" icon={faLinkedin} />
                         </a>
