@@ -7,25 +7,15 @@ import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 import Modal from "react-modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 Modal.setAppElement("#root");
 
 function StartPage () {
 
-    const [showContact, setShowContact] = useState(false);
     const [showProjects, setShowProjects] = useState(false);
 
-    var Tawk_API="218fed3648cd822d08c2335e9ac9be415cce1ddf"||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/60f5660a649e0a0a5ccce9d0/1fav9d68r';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
 
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
@@ -63,24 +53,16 @@ function StartPage () {
     }}
 
     />            
-                <button className="button" onClick={() => setShowContact(true)}>Contact</button>
-                <Modal 
-                    isOpen={showContact}
-                    onRequestClose={() => setShowContact(false)}
-                    contentLabel="Contact"
-                >
+                    
                     <div className="about">
-                        <FontAwesomeIcon icon={faPhone} /> 0547944889 <br></br>
-                        <FontAwesomeIcon icon={faMailBulk} /> korenwohl@gmail.com</div>
-                    <div className="about">
+                        <a href="https://wa.me/97254944889" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
                         <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
-                        <FontAwesomeIcon className="icon" icon={faLinkedin} />
+                            <FontAwesomeIcon className="icon" icon={faLinkedin} />
                         </a>
                         <a href="https://github.com/korenwo/">
-                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                            <FontAwesomeIcon className="icon" icon={faGithub} />
                         </a>
                     </div>       
-                </Modal>
                 <Modal
                     isOpen={showProjects}
                     onRequestClose={() => setShowProjects(false)}
