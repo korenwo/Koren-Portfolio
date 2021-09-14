@@ -20,6 +20,14 @@ function StartPage () {
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
+            <nav className="icon1">0547944889</nav>
+            <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
+                    <FontAwesomeIcon className="icon" icon={faLinkedin} />
+                </a>
+                <a href="https://github.com/korenwo/">
+                    <FontAwesomeIcon className="icon" icon={faGithub} />
+                </a>
+                <a href="https://wa.me/972546435976" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
                 <h1><Typewriter onInit ={(typewriter) => {
                     typewriter.typeString("Koren Wohl").pauseFor(1000).start()
                         }}
@@ -52,17 +60,7 @@ function StartPage () {
     
     }}
 
-    />            
-                    
-                    <div className="about">
-                        <a href="https://wa.me/972547944889" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-                        <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
-                            <FontAwesomeIcon className="icon" icon={faLinkedin} />
-                        </a>
-                        <a href="https://github.com/korenwo/">
-                            <FontAwesomeIcon className="icon" icon={faGithub} />
-                        </a>
-                    </div>       
+    />                
                 <Modal
                     isOpen={showProjects}
                     onRequestClose={() => setShowProjects(false)}
