@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import { animationOne, transition } from './../animations/index';
 import Modal from "react-modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import emailjs from "emailjs-com";
 
 Modal.setAppElement("#root");
@@ -110,7 +110,9 @@ function StartPage () {
                 <a href="https://github.com/korenwo/">
                     <FontAwesomeIcon className="icon" icon={faGithub} />
                 </a>
-                <a href="https://wa.me/972547944889" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+                <a href="https://wa.me/972547944889">
+                    <FontAwesomeIcon className="icon" icon={faWhatsapp} />
+                </a>
             </div>
         </div>           
     </div>
