@@ -8,6 +8,7 @@ import { animationOne, transition } from './../animations/index';
 import Modal from "react-modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import emailjs from "emailjs-com";
 
 Modal.setAppElement("#root");
 
@@ -17,26 +18,31 @@ function StartPage () {
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
 
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_ru3byga', e.target, 'user_ThOwBkK3t8JYIcP4hrJ8B')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
+
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div className="box">
-            <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
-                    <FontAwesomeIcon className="icon" icon={faLinkedin} />
-                </a>
-                <a href="https://github.com/korenwo/">
-                    <FontAwesomeIcon className="icon" icon={faGithub} />
-                </a>
-                <a href="https://wa.me/972547944889" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-                <h1><Typewriter onInit ={(typewriter) => {
-                    typewriter.typeString("Koren Wohl").pauseFor(1000).start()
-                        }}
-                    />
-                </h1>
-                <img src={me} className="me" alt="myPhoto" />
-                <div className="about">
-                    Welcome! I am a
-                    Web Developer with advanced skills in Front End Development
-        
+                    <h1><Typewriter onInit ={(typewriter) => {
+                        typewriter.typeString("Koren Wohl").pauseFor(1000).start()
+                            }}
+                        />
+                    </h1>
+                    <img src={me} className="me" alt="myPhoto" />
+                    <div className="about">
+                        Welcome! I am a
+                        Web Developer with advanced skills in Front End Development
+            
                     <div className="onMe">
 
                         <nav>-Passionate about perfect user experience.</nav> 
@@ -59,7 +65,8 @@ function StartPage () {
     
     }}
 
-    />                
+    />    
+            
                 <Modal
                     isOpen={showProjects}
                     onRequestClose={() => setShowProjects(false)}
@@ -87,6 +94,23 @@ function StartPage () {
                     </div>
                 </Modal>
                 <button className="button" onClick={() => setShowProjects(true)}>My-Projects</button>
+                <form className="contact-form" onSubmit={sendEmail}>
+                    <input type="hidden" name="contact_number" />
+                    <label>Name</label>
+                    <input type="text" name="user_name" />
+                    <label>Email</label>
+                    <input type="email" name="user_email" />
+                    <label>Message</label>
+                    <textarea className="message" />
+                    <input type="submit" value="Send" />
+                </form>
+                <a href="https://www.linkedin.com/in/koren-wohl-a1933b202/">
+                    <FontAwesomeIcon className="icon" icon={faLinkedin} />
+                </a>
+                <a href="https://github.com/korenwo/">
+                    <FontAwesomeIcon className="icon" icon={faGithub} />
+                </a>
+                <a href="https://wa.me/972547944889" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
             </div>
         </div>           
     </div>

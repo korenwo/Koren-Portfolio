@@ -267,8 +267,8 @@ h1{
   }
 
   .whatsapp_float {
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
     display: inline-block;
     background-color:#25d366;
     border-radius:50px;
@@ -282,6 +282,11 @@ h1{
 
   .whatsapp-icon {
     margin-top:16px;
+  }
+  
+  .message{
+    height: 15px;
+    margin-top: 30px;
   }
 
 }
