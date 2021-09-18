@@ -2,7 +2,10 @@
 
   .box {
     position: absolute;
-    background-image: url("wood.jpg");
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    border-color:  black;
   }
 
   .whatsapp-icon {
@@ -90,7 +93,10 @@
   }
 
   .callUs1 {
-    background: lightcyan;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    border-color:  black;
     border-color:  burlywood;
     border-style: solid;
     border-radius: 35px;
@@ -141,7 +147,7 @@
   }
 
   input{
-    width: 250px;
+    width: 120px;
     margin-top: 30px;
   }
   
@@ -150,12 +156,30 @@
     margin-top: 30px;
   }
 
+  .send{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(82, 103, 134);
+    margin-left: 10px;
+  }
 }
+
 @media only screen and (min-width : 1224px) {
 
 .box {
   position: absolute;
-  background-image: url("wood.jpg");
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 
 h1{
@@ -201,7 +225,6 @@ h1{
       outline: none;
       color: black;
       background-color: transparent;
-      margin-left: 50px;
       border-color: black;
       border-radius: 15px;
       box-shadow: 0 9px rgb(82, 103, 134);
@@ -226,8 +249,10 @@ h1{
   }
   
   .callUs1 {
-    background: lightcyan;
-    border-color:  burlywood;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    border-color:  black;
     border-style: solid;
     border-radius: 35px;
     border-width: 10px;
@@ -277,11 +302,33 @@ h1{
     margin-top: 20px;
   }
 
-  .message{
-    height: 50px;
+  form{
     margin-top: 30px;
   }
 
-}
+  input{
+    width: 500px;
+  }
 
+  .message{
+    width: 500px;
+    margin-top: 30px;
+  }
+
+  .send{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(82, 103, 134);
+    margin-left: 10px;
+  }
+}
   
