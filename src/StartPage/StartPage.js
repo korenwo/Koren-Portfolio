@@ -101,10 +101,7 @@ function StartPage () {
                             <input type="text" name="user_name" />
                             <label>Email</label>
                         </div>
-                        <div>
-                            <input type="email" name="user_email" />
-                            <label>Message</label>
-                        </div>
+                        <nav>Write me message</nav>
                         <div>
                             <textarea name="message" className="message" />
                             <input type="submit" value="Send" className="send" />
