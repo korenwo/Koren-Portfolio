@@ -89,6 +89,7 @@ function StartPage () {
                             <Link to="/WeatherApp"><div className="callUs1">Weather <nav>built with React, using weatherApi</nav><a href="https://github.com/korenwo/Koren-Portfolio/tree/main/src/Weather">
                                 <FontAwesomeIcon className="icon" icon={faGithub} />
                             </a></div></Link>
+                            <a href="https://ninja.com.im/"><div className="callUs1">Shop<nav>built with Shopify</nav></div></a> 
                         </div>
                     </Modal>
                     <button className="button" onClick={() => setShowProjects(true)}>My-Projects</button>
